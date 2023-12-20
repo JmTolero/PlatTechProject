@@ -8,7 +8,7 @@ synth = speechSynthesis;
 
 function randomQuote(){
     quoteBtn.classList.add("loading");
-    // quoteBtn.innerText = "Loading Quote...";
+    quoteBtn.innerText = "Loading Quote...";
     fetch("http://api.quotable.io/random").then(response => response.json()).then(result => {
         quoteText.innerText = result.content;
         authorName.innerText = result.author;
@@ -32,8 +32,8 @@ copyBtn.addEventListener("click", ()=>{
 });
 
 twitterBtn.addEventListener("click", ()=>{
-    let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}`;
+    let tweetUrl = `https://twitter.com/=${quoteText.innerText}`;
     window.open(tweetUrl, "_blank");
 });
 
-quoteBtn.addEventListener("click", randomQuote);
+quoteBtn.addEventListener("click", randomQuote());
