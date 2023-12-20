@@ -1,0 +1,161 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+ body
+{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box ;
+    background-image: linear-gradient(to right,rgb(63, 74, 130)0% , rgb(232, 213, 223) 89%);
+}
+.collapse
+{
+    justify-content: space-between;
+}
+.LogoText
+{   
+    font-family: 'Arbutus', sans-serif;
+    color: white;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.nav-link
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(135, 255, 255);
+    border-radius:20px ;
+   
+}
+.nav-link:hover
+{
+    color: blueviolet;
+    cursor:pointer;
+    background: white;
+    border-radius: 20px;
+}
+ul li
+{
+    padding-left: 50px;
+}
+nav
+{
+    background-image: url(images/Black\ Aesthetic\ Wallpapers\ _\ Download\ Free\ Black\ Wallpapers\ 2023.jpg);
+    background-position: center;
+    align-items: center;
+    align-content: center;
+}
+.nice
+{
+   display: flex; 
+   margin-top: .2in;
+}
+.hands 
+{
+    margin: 0%;
+}
+.hands img
+{
+    width: 500px;
+    height:600px;
+    margin-right: 0;
+}
+
+.class_h1
+{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-right: 300px;
+    font-size: 5.5rem;
+    font-family: 'Oswald';
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: rgb(228, 174, 218);
+}
+.Discover_txt p
+{
+    padding: 20px;
+    padding-right: 200px;
+    font-family:'Kanit';
+    color: white;
+}
+.Discover_txt 
+{
+    margin-left: 30px;
+    padding-right: 100px;
+    /* margin-right: 150px; */
+}
+@media screen and (max-width: 1260px)
+{
+   
+    .nice
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hands
+    {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .hands img
+    {
+        margin-left: auto;
+    }
+    .Discover_txt p
+    {
+        padding: 0;
+    }
+    .Discover_txt h1
+    {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0
+    }
+}
+@media screen and (max-width: 575)
+{
+    .hands img
+    {
+        width: 50px;
+        height: 50px;
+        margin: 0%;
+    }
+    .nice
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .hands
+    {
+        width: auto;
+    }
+    .Discover_txt 
+    {
+        padding-right: 0;
+        margin: 0;
+    }
+    .class_h1
+    {
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width: 500){
+    .hands .img1{
+       width:20px;
+        height: auto;
+        margin: 0;
+    }
+    .Discover_txt 
+    {
+        padding-right: 0;
+        margin: 0;
+        font-size: 20px;
+    }
+    .class_h1
+    {
+        font-size: 30px;
+    }
+}
